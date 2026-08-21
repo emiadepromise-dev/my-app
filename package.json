@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
@@ -39,6 +40,8 @@
     "typescript": "^5"
   },
   "allowScripts": {
-    "better-sqlite3": true
+    "better-sqlite3": true,
+    "@prisma/engines": true,
+    "prisma": true
   }
 }
