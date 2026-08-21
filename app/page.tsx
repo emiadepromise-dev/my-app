@@ -108,6 +108,7 @@ export default function DashboardPage() {
         <p className="page-description">
           CyberYoshi — Lightweight cybersecurity toolkit for authorized security testing.
         </p>
+        <p className="text-xs text-muted-foreground/70 mt-1">Developed by emiadepromise-dev</p>
       </div>
 
       <div className="space-y-4">
