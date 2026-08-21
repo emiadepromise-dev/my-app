@@ -9,6 +9,7 @@ import {
   Shield,
   History,
   ArrowRight,
+  Rocket,
 } from "lucide-react";
 import { useRecentActivity } from "@/hooks/use-recent-activity";
 import type { Activity } from "@/lib/types";
@@ -189,6 +190,21 @@ export default function DashboardPage() {
             })}
           </div>
         )}
+      </div>
+
+      <div className="card-surface p-6 flex items-center gap-4">
+        <div className="size-10 rounded-xl bg-primary/8 flex items-center justify-center ring-1 ring-primary/10 shrink-0">
+          <Rocket className="size-5 text-primary/70" />
+        </div>
+        <div>
+          <p className="text-sm font-semibold">
+            CyberYoshi V2{" "}
+            <span className="text-primary/60 font-medium ml-1">Coming Soon</span>
+          </p>
+          <p className="text-xs text-muted-foreground mt-0.5">
+            A bigger, smarter CyberYoshi experience is on the way.
+          </p>
+        </div>
       </div>
     </div>
   );
